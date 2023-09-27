@@ -6,7 +6,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   height: unset;
-  z-index: 9999999999999999999999999999999 !important;
+  z-index: 9999999999999999 !important;
   transition: all 0.4s ease-in-out;
   &.isSticky {
     position: sticky;
