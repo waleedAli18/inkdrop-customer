@@ -1,0 +1,21 @@
+.ant-tabs-tab {
+    text-transform: capitalize;
+}
+.ant-tabs-nav-list {
+    overflow-x: auto;
+}
+
+.ant-tabs-nav-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.ant-tabs-nav-list::-webkit-scrollbar-track {
+    background-color: darkgrey;
+}
+
+.ant-tabs-nav-list::-webkit-scrollbar-thumb {
+    background-color: #00546f;
+    outline: 1px solid #00546f;
+}
+

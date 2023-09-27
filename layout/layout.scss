@@ -1,0 +1,21 @@
+@import "../assets/styles/variables.scss";
+@import "./../src/app/globals.css";
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+// .container {
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+
+.mainWrapper {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.ant-layout {
+  background-color: $whitecolor;
+}

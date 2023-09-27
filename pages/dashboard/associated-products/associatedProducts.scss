@@ -1,0 +1,62 @@
+@import "../../../assets/styles/variables.scss";
+
+.deleteProductModal {
+  .ant-modal-content {
+    padding: 60px 25px !important;
+    border-radius: 50px !important;
+
+    .customHeadingWrapper {
+      h5 {
+        color: $blackcolor;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1; /* 35.391px */
+        text-transform: capitalize;
+        padding-top: 20px;
+        padding-bottom: 15px;
+      }
+    }
+
+    p {
+      width: 80%;
+      color: $blackcolor;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 162.5% */
+      letter-spacing: 0.48px;
+    }
+  }
+  .aside {
+    button {
+      margin: 0 10px;
+    }
+  }
+}
+
+.switchWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  p {
+    color: $blackcolor;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    &.active {
+      color: $primaryColor;
+    }
+    &.inActive {
+      color: $lightGrey;
+    }
+  }
+  button {
+    margin: 0 10px;
+  }
+}

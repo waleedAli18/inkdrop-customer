@@ -1,0 +1,134 @@
+@import "../../../assets/styles/variables.scss";
+
+.customArtCardWrapper {
+  display: inline-block;
+  margin-bottom: 20px;
+  .customArtCard {
+    width: 500px;
+    border-radius: 20px;
+    background: $whitecolor;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+    overflow: hidden;
+    .img {
+      img {
+        height: 220px;
+        width: 220px;
+        border-radius: 32px;
+      }
+    }
+    .cont {
+      h3 {
+        color: $blackcolor;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      p {
+        &.createdOn {
+          color: #595959;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 2px;
+        }
+      }
+
+      ul.ant-rate {
+        margin-right: 5px;
+        li.ant-rate-star {
+          margin-right: 2px !important;
+          svg {
+            font-size: 16px;
+            // color: $startColor;
+          }
+        }
+      }
+
+      .category {
+        margin-top: 10px;
+        h4 {
+          color: $blackcolor;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        span {
+          color: #595959;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: capitalize;
+          display: inline-block;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .associateCardWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    .customArtCard {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .associateCardWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    .customArtCard {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .associateCardWrapper {
+    grid-template-columns: 1fr 1fr;
+    .customArtCard {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .associateCardWrapper {
+    grid-template-columns: 1fr !important;
+    .customArtCard {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

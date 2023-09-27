@@ -1,0 +1,36 @@
+.ant-tabs-nav {
+  margin-bottom: 40px !important;
+}
+
+.ant-tabs-card .ant-tabs-nav {
+  margin: 0 !important;
+}
+
+.ant-tabs-tab-active {
+  color: #000 !important;
+  background: #fff !important;
+}
+
+.ant-tabs-tab {
+  font-weight: 500;
+  font-size: 13px;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+}
+.ant-tabs-tab:hover {
+  color: #892fc0 !important;
+}
+
+.ant-tabs-tab {
+  color: #9a9a9a !important;
+  background: transparent !important;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #892fc0 !important;
+}
+
+.ant-tabs-ink-bar {
+  background: #892fc0 !important;
+}

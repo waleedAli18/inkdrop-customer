@@ -1,0 +1,79 @@
+@import "../../../assets/styles/variables.scss";
+
+.designCardWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  .customCard {
+    border-radius: 8px;
+    box-shadow: unset;
+    border: none;
+    cursor: pointer;
+    .ant-card-body {
+      padding-left: 0;
+      padding-right: 0;
+      h3 {
+        line-height: 1.2;
+        color: $blackcolor;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p.designedBy {
+        color: $textLightGrey;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 12px;
+      }
+    }
+
+    .ant-card-cover img {
+      // height: 250px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .designCardWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .designCardWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .designCardWrapper {
+    grid-template-columns: 1fr;
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

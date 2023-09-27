@@ -1,0 +1,80 @@
+@import "../../../assets/styles/variables.scss";
+
+.deleteProductModal {
+  .ant-modal-content {
+    padding: 60px 25px !important;
+    border-radius: 50px !important;
+
+    .customHeadingWrapper {
+      h5 {
+        color: $blackcolor;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1; /* 35.391px */
+        text-transform: capitalize;
+        padding-top: 20px;
+        padding-bottom: 15px;
+      }
+    }
+
+    p {
+      width: 80%;
+      color: $blackcolor;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 162.5% */
+      letter-spacing: 0.48px;
+    }
+  }
+  .aside {
+    button {
+      margin: 0 10px;
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .load-more {
+    button {
+      width: 50% !important;
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .load-more {
+    button {
+      width: 50% !important;
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

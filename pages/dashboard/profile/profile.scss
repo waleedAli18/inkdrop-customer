@@ -1,0 +1,267 @@
+@import "../../../assets/styles/variables.scss";
+
+.profileTop {
+  &.cont {
+    .contInner {
+      display: grid;
+      grid-template-columns: 20% 50% 30%;
+      align-items: center;
+      &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 75%;
+        width: 95%;
+        margin: auto;
+        border-radius: 14px;
+        background: linear-gradient(180deg, #b148d2 0%, #691883 100%);
+        z-index: 0;
+      }
+      .img {
+        overflow: hidden;
+        position: relative;
+        img {
+          height: 200px;
+          width: 200px;
+          object-fit: cover;
+          border-radius: 100%;
+          border: 14px solid #fafafa;
+        }
+      }
+      .mid {
+        position: relative;
+        h2 {
+          color: $whitecolor;
+          font-size: 32px;
+          font-weight: 600;
+          line-height: 1;
+          padding-bottom: 15px;
+        }
+        p {
+          color: $whitecolor;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1;
+        }
+      }
+      .right {
+        position: relative;
+        button {
+          padding: 12px 90px !important;
+          background-color: transparent !important;
+          color: $whitecolor;
+          border: 1px solid $whitecolor;
+          &::after {
+            display: none;
+          }
+          &:hover {
+            background-color: $whitecolor !important;
+            color: $primaryColor !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#profileForm {
+  .ant-form-item {
+    > .ant-row {
+      .ant-col {
+        &.ant-form-item-control {
+          flex: unset;
+        }
+      }
+      flex-direction: column;
+      .ant-checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+      }
+      .ant-form-item-label {
+        width: 100%;
+        & label {
+          width: 100%;
+          text-align: left;
+          color: $blackcolor;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 1;
+        }
+      }
+      textarea {
+        height: 150px;
+      }
+    }
+  }
+  .with-label {
+    margin-bottom: 15px;
+  }
+}
+
+#editProfileForm {
+  #editProfileForm_password,
+  #editProfileForm_confirmPassword {
+    min-height: unset;
+    padding: unset !important;
+    background: unset !important;
+    box-shadow: unset;
+    height: unset;
+    border-radius: unset;
+  }
+  button[type="submit"] {
+    width: 25%;
+  }
+  .custom-column {
+    &.left {
+      padding-right: 30px;
+    }
+    &.right {
+      padding-left: 30px;
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .profileTop.cont {
+    .contInner {
+      grid-template-columns: 1fr 1fr;
+      padding: 10px;
+      gap: 10px;
+      &::before {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  // #profileForm {
+  //   .ant-form-item > .ant-row {
+  //     .ant-checkbox-group {
+  //       grid-template-columns: 1fr;
+  //       gap: 5px;
+  //     }
+  //   }
+  // }
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .profileTop.cont {
+    .contInner {
+      grid-template-columns: 1fr;
+      padding: 10px;
+      gap: 10px;
+      &::before {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  #profileForm {
+    .ant-form-item > .ant-row {
+      .ant-checkbox-group {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+    }
+  }
+  #editProfileForm {
+    .custom-column.left {
+      padding-right: 0;
+    }
+    .custom-column.right {
+      padding-left: 0;
+    }
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .profileTop.cont {
+    .contInner {
+      grid-template-columns: 1fr;
+      padding: 10px;
+      gap: 10px;
+      &::before {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  #profileForm {
+    .ant-form-item > .ant-row {
+      .ant-checkbox-group {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+    }
+  }
+  #editProfileForm {
+    .custom-column.left {
+      padding-right: 0;
+    }
+    .custom-column.right {
+      padding-left: 0;
+    }
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .profileTop.cont {
+    .contInner {
+      grid-template-columns: 1fr;
+      padding: 10px;
+      gap: 10px;
+      &::before {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  #profileForm {
+    .ant-form-item > .ant-row {
+      .ant-checkbox-group {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+    }
+  }
+
+  #editProfileForm {
+    .custom-column.left {
+      padding-right: 0;
+    }
+    .custom-column.right {
+      padding-left: 0;
+    }
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

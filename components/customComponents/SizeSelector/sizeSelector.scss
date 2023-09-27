@@ -1,0 +1,73 @@
+@import "../../../assets/styles/variables.scss";
+
+.sizeSelectorWrapper {
+  .ant-radio-button-wrapper {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000 !important;
+    border-radius: unset;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 30px;
+    padding: 0px 8px;
+    &:before {
+      display: none;
+    }
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    z-index: 1;
+    color: #fff !important;
+    background: #000 !important;
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sizeSelectorWrapper {
+    .ant-radio-button-wrapper {
+      font-size: 18px;
+    }
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .sizeSelectorWrapper {
+    .ant-radio-button-wrapper {
+      font-size: 18px;
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .sizeSelectorWrapper {
+    .ant-radio-button-wrapper {
+      font-size: 18px;
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

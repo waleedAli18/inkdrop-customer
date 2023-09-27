@@ -1,0 +1,15 @@
+@import "../../../assets/styles/variables.scss";
+
+.headerMessage {
+  background-color: $lightPrimaryColor;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  p {
+    color: $whitecolor;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

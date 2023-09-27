@@ -1,0 +1,247 @@
+@import "../../../assets/styles/variables.scss";
+
+.homeHeader {
+  background-color: #f6f6f6 !important;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: unset;
+  z-index: 9999999999999999999999999999999 !important;
+  transition: all 0.4s ease-in-out;
+  &.isSticky {
+    position: sticky;
+    top: 0;
+  }
+  .left {
+    height: 100%;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+      a {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .notificationIcon,
+  .headIcon {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+  }
+
+  .ant-badge-count {
+    right: 6px !important;
+  }
+
+  span.badgeWrapper {
+    height: 30px;
+    width: 30px;
+    background: $whitecolor;
+    color: $lightPrimaryColor;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    .ant-badge-count {
+      background: $lightPrimaryColor;
+      min-width: 16px;
+      height: 16px;
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+
+  ul {
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent !important;
+
+    li.activeMenu a,
+    li:hover a {
+      color: $primaryColor !important;
+      font-weight: bold;
+    }
+
+    li:hover:after,
+    li.activeMenu:after {
+      border-bottom-color: $primaryColor !important;
+    }
+    li:after {
+      bottom: 15px !important;
+      border-bottom-color: transparent !important;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+
+    span.badgeWrapper {
+      margin-left: 20px;
+    }
+  }
+}
+
+.headerDropdownMenu {
+  li {
+    border-bottom: 1px solid rgba(226, 232, 240, 1);
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    &:last-child {
+      border-bottom: 0;
+    }
+    svg {
+      margin-right: 15px;
+    }
+    a {
+      color: $blackcolor;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}
+
+.notificationList {
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+  padding: 20px 15px;
+  border-radius: 14px;
+  background: $whitecolor;
+  width: 500px;
+  li {
+    list-style: none;
+    display: grid;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-template-columns: 10% auto 12%;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(226, 232, 240);
+    transition: all 0.4s ease-in-out;
+    &:last-child {
+      border-bottom: 0;
+    }
+    &:hover {
+      background: #f6f6f6;
+    }
+    p {
+      color: $blackcolor;
+      word-break: break-all;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .dayTime {
+      span {
+        color: $blackcolor;
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+        height: 100%;
+        display: block;
+        text-transform: capitalize;
+      }
+    }
+    .img {
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.authModalWrapper {
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .homeHeader {
+    padding-left: 0;
+    padding-right: 0;
+    .left {
+      .logo {
+        justify-content: center;
+      }
+    }
+    .right {
+      justify-content: center;
+    }
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .homeHeader {
+    padding-left: 0;
+    padding-right: 0;
+    .left {
+      .logo {
+        justify-content: center;
+      }
+    }
+    .right {
+      justify-content: center;
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .homeHeader {
+    padding-left: 0;
+    padding-right: 0;
+    .left {
+      .logo {
+        justify-content: center;
+      }
+    }
+    .right {
+      justify-content: center;
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

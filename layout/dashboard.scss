@@ -1,0 +1,295 @@
+@import "../assets/styles/variables.scss";
+@import "./../src/app/globals.css";
+
+.dashboardLayout {
+  .dashboardSidebar {
+    background: #f6f6f6 !important;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease-in-out;
+    .ant-layout-sider-children {
+      &.isSticky {
+        height: auto;
+        position: sticky;
+        z-index: 99999999999;
+        top: 0;
+      }
+    }
+    .dashboardMenu {
+      background-color: transparent !important;
+    }
+    &.collapsed {
+      width: 100px !important;
+      min-width: 100px !important;
+      max-width: 100px !important;
+      .dashboardMenu {
+        transition: all 0.2s ease-in-out;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+          margin: 0 !important;
+          height: unset;
+          width: 100%;
+          margin-bottom: 22px !important;
+          background-color: unset;
+          transition: all 0.2s ease-in-out;
+          span {
+            all: initial;
+            color: #595959;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1;
+            margin-top: 5px;
+            transition: all 0.2s ease-in-out;
+          }
+          svg {
+            height: 48px;
+            width: 48px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 100px;
+            transition: all 0.2s ease-in-out;
+          }
+          &.activeMenu {
+            svg {
+              stroke: $whitecolor;
+              background-color: $lightPrimaryColor;
+              path {
+                stroke: $whitecolor;
+                transition: all 0.2s ease-in-out;
+                // fill: $whitecolor;
+              }
+            }
+            span {
+              color: $lightPrimaryColor;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+    &.expanded {
+      width: 250px !important;
+      min-width: 250px !important;
+      max-width: 250px !important;
+      .dashboardMenu {
+        padding-left: 20px;
+        li {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          margin: 0 !important;
+          height: unset;
+          width: 100%;
+          margin-bottom: 22px !important;
+          background-color: unset;
+          transition: all 0.2s ease-in-out;
+          span {
+            all: initial;
+            color: #595959;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1;
+            margin-top: 0;
+            margin-left: 20px;
+            transition: all 0.2s ease-in-out;
+          }
+          svg {
+            height: 35px;
+            width: 35px;
+            background: #fff;
+            padding: 8px;
+            border-radius: 100px;
+            transition: all 0.2s ease-in-out;
+          }
+          &.activeMenu {
+            svg {
+              background-color: $lightPrimaryColor;
+              path {
+                stroke: #fff;
+                transition: all 0.2s ease-in-out;
+                // fill: $whitecolor;
+              }
+            }
+            span {
+              color: $lightPrimaryColor;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+    .toggleButton {
+      color: $blackcolor;
+      margin-left: 32px;
+      margin-top: 30px !important;
+      margin-bottom: 20px;
+      border: none;
+      background: transparent !important;
+      box-shadow: unset;
+      &:hover {
+        color: $primaryColor !important;
+      }
+      svg {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .homeHeader {
+    margin-bottom: 20px !important;
+    padding-left: 20px;
+  }
+
+  .customHeadingWrapper {
+    h5 {
+      text-transform: capitalize !important;
+    }
+  }
+
+  a {
+    &.link {
+      color: #892fc0;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .dashboardLayout {
+    .dashboardSidebar {
+      &.collapsed {
+        width: 60px !important;
+        min-width: 60px !important;
+        max-width: 60px !important;
+        .dashboardMenu {
+          li {
+            span {
+              font-size: 10px;
+            }
+            svg {
+              height: 38px;
+              width: 38px;
+            }
+          }
+        }
+      }
+      &.expanded {
+        width: 120px !important;
+        min-width: 120px !important;
+        max-width: 120px !important;
+        .dashboardMenu {
+          padding-left: 8px;
+          li {
+            span {
+              font-size: 11px;
+              margin-left: 10px;
+              text-align: left;
+            }
+            svg {
+              height: 30px;
+              width: 30px;
+            }
+          }
+        }
+      }
+      .toggleButton {
+        margin-left: 15px;
+      }
+    }
+    .ant-layout-content {
+      padding: 15px !important;
+    }
+    .homeHeader {
+      margin-bottom: 20px !important;
+      padding-left: 0;
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .dashboardLayout {
+    .dashboardSidebar {
+      &.collapsed {
+        width: 60px !important;
+        min-width: 60px !important;
+        max-width: 60px !important;
+        .dashboardMenu {
+          li {
+            margin-bottom: 10px !important;
+            span {
+              font-size: 0px;
+            }
+            svg {
+              height: 38px;
+              width: 38px;
+            }
+          }
+        }
+      }
+      &.expanded {
+        width: 120px !important;
+        min-width: 120px !important;
+        max-width: 120px !important;
+        .dashboardMenu {
+          padding-left: 8px;
+          li {
+            span {
+              font-size: 11px;
+              margin-left: 10px;
+              text-align: left;
+            }
+            svg {
+              height: 30px;
+              width: 30px;
+            }
+          }
+        }
+      }
+      .toggleButton {
+        margin-left: 15px;
+      }
+    }
+    .ant-layout-content {
+      padding: 15px !important;
+    }
+    .homeHeader {
+      margin-bottom: 20px !important;
+      padding-left: 0;
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

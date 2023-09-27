@@ -1,0 +1,82 @@
+.headingButtonWrapper {
+  margin-bottom: 40px;
+  .left {
+    text-align: left;
+    .customHeadingWrapper {
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      h5.primary-heading {
+        text-align: left;
+      }
+    }
+  }
+  .right {
+    text-align: right;
+    .customHeadingWrapper {
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      h5.primary-heading {
+        text-align: right;
+      }
+    }
+    button {
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .headingButtonWrapper {
+    h5 {
+      font-size: 22px !important;
+      margin-bottom: 10px !important;
+    }
+    .right {
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .headingButtonWrapper {
+    h5 {
+      font-size: 22px !important;
+      margin-bottom: 10px !important;
+    }
+    .right {
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

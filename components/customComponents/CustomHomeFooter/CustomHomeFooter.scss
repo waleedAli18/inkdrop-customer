@@ -1,0 +1,84 @@
+@import "../../../assets/styles/variables.scss";
+
+.homeFooter {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin-top: 50px;
+  background-color: unset;
+  .logo {
+    text-align: center;
+  }
+
+  ul {
+    justify-content: center;
+    background: transparent;
+    border: unset;
+    box-shadow: unset;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    li {
+      a {
+        color: $blackcolor !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        &:hover {
+          color: $primaryColor !important;
+        }
+      }
+    }
+  }
+  ul li:after {
+    display: none;
+  }
+  p.copyright {
+    text-align: center;
+    color: $whitecolor;
+    background-color: $lightPrimaryColor;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .homeFooter {
+    margin-top: 30px;
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .homeFooter {
+    margin-top: 30px;
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

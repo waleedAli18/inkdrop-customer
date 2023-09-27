@@ -1,0 +1,200 @@
+@import "../../../../assets/styles/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+
+.homeBoxesWrapper {
+  margin-bottom: 50px;
+  .box {
+    display: flex;
+    object-fit: contain;
+    border: none;
+    border-radius: unset;
+    background-repeat: no-repeat;
+    height: 100%;
+    h3 {
+      color: $blackcolor;
+      font-family: "Ms Madi", sans-serif;
+      font-weight: 400;
+      line-height: 1;
+    }
+    h2 {
+      color: $blackcolor;
+      font-size: 95px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .ant-card-body {
+      padding: 15px;
+    }
+  }
+  .leftBox {
+    padding-left: 0 !important;
+    .box {
+      height: 500px;
+      align-items: center;
+      justify-content: flex-end;
+      background-size: 50%;
+      background-position: 3% 50%;
+      background-color: $homeBoxBg1;
+      h3 {
+        font-size: 65px;
+        margin-bottom: -27px;
+      }
+    }
+  }
+  .rightBox {
+    padding-right: 0 !important;
+    .ant-row {
+      row-gap: 7px;
+      height: 100%;
+      > .ant-col {
+        width: 50%;
+        &:first-child {
+          width: 100%;
+        }
+      }
+    }
+
+    .box {
+      h3 {
+        font-size: 43px;
+        margin-bottom: -10px;
+        z-index: 111;
+      }
+      h2 {
+        font-size: 45px;
+      }
+      &.box-1 {
+        background-color: $homeBoxBg2;
+        background-size: 50%;
+        background-position: 1% 50%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 25%;
+        h2 {
+          font-size: 66px;
+        }
+      }
+      &.box-2 {
+        background-color: $homeBoxBg3;
+        background-size: 45%;
+        background-position: 100% 10%;
+        justify-content: flex-start;
+        align-items: flex-end;
+        h3 {
+          font-size: 30px;
+        }
+      }
+      &.box-3 {
+        background-color: $homeBoxBg4;
+        background-size: 45%;
+        background-position: 95% 90%;
+        h3 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .homeBoxesWrapper {
+    margin-bottom: 30px;
+    .leftBox {
+      width: 100%;
+      padding-left: 2.5px !important;
+      .box {
+        height: 300px;
+        h3 {
+          font-size: 38px;
+        }
+        h2 {
+          font-size: 75px;
+        }
+      }
+    }
+    .rightBox {
+      padding-right: 2.5px !important;
+      width: 100%;
+      .box {
+        h2 {
+          font-size: 25px;
+        }
+        &.box-2,
+        &.box-3 {
+          h3 {
+            font-size: 24px;
+          }
+        }
+      }
+      .ant-row {
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+      }
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .homeBoxesWrapper {
+    margin-bottom: 30px;
+    .leftBox {
+      width: 100%;
+      padding-left: 2.5px !important;
+      .box {
+        height: 300px;
+        h3 {
+          font-size: 38px;
+        }
+        h2 {
+          font-size: 75px;
+        }
+      }
+    }
+    .rightBox {
+      padding-right: 2.5px !important;
+      width: 100%;
+      .box {
+        h2 {
+          font-size: 25px;
+        }
+        &.box-2,
+        &.box-3 {
+          h3 {
+            font-size: 24px;
+          }
+        }
+      }
+      .ant-row {
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+      }
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

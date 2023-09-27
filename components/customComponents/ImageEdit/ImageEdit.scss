@@ -1,0 +1,155 @@
+@import "../../../assets/styles/variables.scss";
+
+.imageEditWrapper {
+  .left {
+    .productImage img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .productPreview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 300px;
+      width: 300px;
+      overflow: hidden;
+    }
+
+    h5 {
+      &.primary-heading {
+        text-align: left;
+        text-transform: capitalize;
+        color: $blackcolor;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+
+  .right {
+    h5 {
+      &.primary-heading {
+        color: $primaryColor;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: left;
+      }
+    }
+    .imageSettings,
+    .productSettings {
+      width: 70%;
+      h3 {
+        background: #f1f1f1;
+        display: block;
+        color: #595959;
+        text-align: left;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px 20px;
+        margin: 10px 0;
+      }
+      .aside {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10px;
+        h4 {
+          color: $blackcolor;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .imageEditWrapper {
+    .right {
+      .imageSettings,
+      .productSettings {
+        width: 100%;
+        .aside {
+          h4 {
+            font-size: 18px;
+          }
+        }
+      }
+      .quantityInputWrapper {
+        text-align: right;
+      }
+    }
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .imageEditWrapper {
+    .right {
+      .imageSettings,
+      .productSettings {
+        width: 100%;
+        .aside {
+          h4 {
+            font-size: 18px;
+          }
+        }
+      }
+      .quantityInputWrapper {
+        text-align: right;
+      }
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .imageEditWrapper {
+    .right {
+      .imageSettings,
+      .productSettings {
+        width: 100%;
+        .aside {
+          h4 {
+            font-size: 18px;
+          }
+        }
+      }
+      .quantityInputWrapper {
+        text-align: right;
+      }
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

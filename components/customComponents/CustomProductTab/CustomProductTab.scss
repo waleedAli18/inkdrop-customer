@@ -1,0 +1,66 @@
+.ProductTabwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  .cont {
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    h3 {
+      color: #000;
+    }
+    a {
+      span {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
+        text-decoration: underline;
+        color: #892fc0;
+      }
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ProductTabwrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .ProductTabwrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .ProductTabwrapper {
+    grid-template-columns: 1fr;
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

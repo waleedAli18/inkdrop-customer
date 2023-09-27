@@ -1,0 +1,119 @@
+@import "../../../assets/styles/variables.scss";
+
+.customTableWrapper {
+  border-radius: 14px;
+  background: $whitecolor;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.14);
+  margin-bottom: 10px;
+  table {
+    padding: 10px;
+    .ant-table-thead {
+      > tr {
+        > th {
+          color: $blackcolor;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 1;
+          border-bottom-color: $blackcolor;
+          background: transparent;
+        }
+      }
+    }
+    .ant-table-tbody {
+      > tr {
+        > td {
+          color: $blackcolor;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1;
+          border-bottom-color: #b5b5b5;
+          padding: 16px;
+          span {
+            &.statusBox {
+              padding: 8px 10px;
+              width: 100px !important;
+              display: inline-block;
+              text-align: center;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              text-transform: capitalize;
+              border-radius: 25px;
+              &.paid {
+                background-color: $statusCompleteBg;
+                color: $statusCompleteColor;
+              }
+              &.in-process {
+                background-color: $statusInProcessBg;
+                color: $startColor;
+              }
+              &.un-paid {
+                background-color: $textLightGrey;
+                color: $whitecolor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ant-pagination {
+    .ant-pagination-item {
+      a {
+        font-weight: 500;
+      }
+    }
+    .ant-pagination-item-active {
+      border-color: $primaryColor;
+      a {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+// MEDIA QUERY START
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} //  Dont delete this bracket!
+
+// ##Device = Desktops
+// ##Screen = 1281px to higher resolution desktops
+
+@media (min-width: 1281px) {
+} //  Dont delete this bracket!
+
+// ##Device = Laptops, Desktops
+// ##Screen = B/w 1025px to 1280px
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+} //  1025px to 1280px (Laptops, Desktops) Dont delete this bracket!
+
+// ##Device = Tablets, Ipads (landscape)
+// ##Screen = B/w 768px to 1024px
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+} //  768px to 1024px (landscape) Dont delete this bracket!
+
+// ##Device = Tablets, Ipads (portrait)
+// ##Screen = B/w 768px to 1024px
+
+@media (min-width: 768px) and (max-width: 1024px) {
+} //  768px to 1024px (portrait) Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 320px to 479px
+
+@media (min-width: 320px) and (max-width: 480px) {
+} //  320px to 479px (Portrait) Dont delete this bracket!

@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variables.scss";
+
+.quantityInputWrapper {
+  .ant-btn {
+    background: #d9d9d9;
+    color: $blackcolor;
+    border-radius: unset;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    height: 32px;
+    width: 40px;
+    &.btn-left {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+    &.btn-right {
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+  }
+  .ant-input-number {
+    width: 50px;
+    border-radius: unset;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: 1px solid #f2f2f2;
+    border-bottom-color: 1px solid #f2f2f2;
+    .ant-input-number-input {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,280 @@
+@import "../../assets/styles/variables.scss";
+
+.cartWrapper {
+  .cont {
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    .innerCont {
+      border-bottom: 1px solid #dfe5ef;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      .head {
+        margin-bottom: 10px;
+        h4 {
+          color: $blackcolor;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 1;
+          padding-bottom: 10px;
+        }
+        p {
+          color: $blackcolor;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1; /* 22.4px */
+          letter-spacing: 0.16px;
+          a {
+            color: #892fc0;
+          }
+        }
+      }
+      .aside {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 15% 70% 15%;
+        .img {
+          height: 130px;
+          width: 130px;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0px 0px 15px 0px #ccc;
+          padding: 15px;
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+      .content {
+        h2 {
+          color: $blackcolor;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1;
+          margin-bottom: 10px;
+        }
+        ul {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          li {
+            list-style: none;
+            position: relative;
+            span {
+              display: grid;
+              align-items: center;
+              grid-template-columns: 1fr 1fr;
+              margin-bottom: 15px;
+              width: 275px;
+
+              h4 {
+                color: $blackcolor;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+              h5 {
+                color: $blackcolor;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .colorBox {
+              height: 30px;
+              width: 30px;
+              border-radius: 10px;
+              box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              height: 50px;
+              width: 1px;
+              background: #9a9a9a;
+              margin: auto;
+              left: -10px;
+              top: 0;
+              bottom: 0;
+            }
+            &:first-child::before {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        .quantityInputWrapper {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .cartWrapper {
+    .cont {
+      .innerCont {
+        .aside {
+          grid-template-columns: 1fr;
+          .img {
+            margin-bottom: 15px;
+          }
+          .content {
+            ul {
+              display: grid;
+              grid-template-columns: 1fr;
+              li {
+                span {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .price {
+          flex-direction: row;
+          justify-content: space-between;
+          .quantityInputWrapper {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cartWrapper {
+    .cont {
+      .innerCont {
+        .aside {
+          grid-template-columns: 1fr;
+          .img {
+            margin-bottom: 15px;
+          }
+          .content {
+            ul {
+              display: grid;
+              grid-template-columns: 1fr;
+              li {
+                span {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .price {
+          flex-direction: row;
+          justify-content: space-between;
+          .quantityInputWrapper {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .cartWrapper {
+    .cont {
+      .innerCont {
+        .aside {
+          grid-template-columns: 1fr;
+          .img {
+            margin-bottom: 15px;
+          }
+          .content {
+            ul {
+              display: grid;
+              grid-template-columns: 1fr;
+              li {
+                span {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .price {
+          flex-direction: row;
+          justify-content: space-between;
+          .quantityInputWrapper {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .cartWrapper {
+    .cont {
+      .innerCont {
+        .aside {
+          grid-template-columns: 1fr;
+          .img {
+            margin-bottom: 15px;
+          }
+          .content {
+            ul {
+              display: grid;
+              grid-template-columns: 1fr;
+              li {
+                span {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .price {
+          flex-direction: row;
+          justify-content: space-between;
+          .quantityInputWrapper {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

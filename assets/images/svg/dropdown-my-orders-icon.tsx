@@ -1,0 +1,29 @@
+import React, { memo, ReactNode } from "react";
+
+interface DropdownMyOrdersIconProps {
+  children?: ReactNode;
+  className?: string;
+  onClick?: () => void;
+}
+
+const DropdownMyOrdersIcon: React.FC<DropdownMyOrdersIconProps> = (props) => {
+  return (
+    <svg
+      width="22"
+      height="21"
+      viewBox="0 0 22 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 2.86551L2.57895 4.44445L5.73684 1.28656M1 10.2339L2.57895 11.8129L5.73684 8.65498M1 17.6024L2.57895 19.1813L5.73684 16.0234M9.42105 10.2339H21M9.42105 17.6024H21M9.42105 2.86551H21"
+        stroke="black"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export default memo(DropdownMyOrdersIcon);

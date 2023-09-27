@@ -1,0 +1,87 @@
+@import "../../../assets/styles/variables.scss";
+
+.customSearchWrapper {
+  display: flex;
+  align-items: center;
+  .ant-input-wrapper {
+    span {
+      border-radius: unset !important;
+    }
+    input {
+      border: none;
+      width: 300px !important;
+      border-radius: 50px !important;
+      height: unset !important;
+      padding: 6px 40px 6px 20px !important;
+    }
+    button {
+      border: none;
+      height: unset !important;
+      padding: 0 !important;
+      outline: none;
+      box-shadow: unset !important;
+      position: absolute !important;
+      right: 5px;
+      top: 5px;
+      bottom: 0;
+      background: unset !important;
+      z-index: 1;
+      svg {
+        font-size: 18px;
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+// MEDIA QUERY STARTS
+
+// ##Device = HD Desktops
+// ##Screen = 1600px to higher resolution desktops
+
+@media screen and (min-width: 1600px) {
+} // Dont delete this bracket!
+
+// ##Device = Ipads, Ipad Pro
+// ##Screen = B/w 1024px to 1365px
+@media (min-width: 1024px) and (max-width: 1365px) {
+} //  1024px to 1365px Dont delete this bracket!
+
+// ##Device = Tablets, Ipads
+// ##Screen = B/w 768px to 1023px
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .customSearchWrapper {
+    .ant-input-wrapper {
+      input {
+        width: auto !important;
+      }
+    }
+  }
+} //  768px to 1023px  Dont delete this bracket!
+
+// ##Device = Low Resolution Tablets, Mobiles (Landscape)
+// ##Screen = B/w 481px to 767px
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .customSearchWrapper {
+    .ant-input-wrapper {
+      input {
+        width: 200px !important;
+      }
+    }
+  }
+} //  481px to 767px (Landscape) Dont delete this bracket!
+
+// ##Device = Most of the Smartphones Mobiles (Portrait)
+// ##Screen = B/w 360px to 479px
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .customSearchWrapper {
+    .ant-input-wrapper {
+      input {
+        width: 150px !important;
+      }
+    }
+  }
+} //  360px to 480px (Portrait) Dont delete this bracket!

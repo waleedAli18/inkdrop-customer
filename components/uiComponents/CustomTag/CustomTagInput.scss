@@ -1,0 +1,49 @@
+@import "../../../assets/styles/variables.scss";
+
+.customTagInput {
+  background: #ffffff;
+  line-height: unset;
+  min-height: 50px;
+  border-width: 1px;
+  box-shadow: none;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 0, 0.21);
+
+  input {
+    padding: 15px 20px !important;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: transparent;
+    font-style: normal;
+    font-weight: 400;
+    color: $blackcolor;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.48);
+
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  span {
+    margin: 5px 5px 0px 5px;
+    padding: 5px;
+    background-color: $lightPrimaryColor;
+    color: $whitecolor;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      background-color: #ff4d4f;
+    }
+    .ant-tag-close-icon {
+      margin: 0;
+      margin-left: 5px;
+      padding: 0;
+      background-color: unset;
+      svg {
+        color: $whitecolor;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+}
