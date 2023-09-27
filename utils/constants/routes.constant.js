@@ -2,7 +2,7 @@ import Dashboard from "../../assets/images/svg/dashboard";
 import DropdownDashboardIcon from "../../assets/images/svg/dropdown-dashboard-icon";
 import DropdownLogoutIcon from "../../assets/images/svg/dropdown-logout-icon";
 import DropdownManagePortfolioIcon from "../../assets/images/svg/dropdown-manage-portfolio-icon";
-import DropdownMyProfileIcon from "../../assets/images/svg/dropdown-my-Profile-icon";
+import DropdownMyProfileIcon from "../../assets/images/svg/dropdown-my-profile-icon";
 import DropdownMyOrdersIcon from "../../assets/images/svg/dropdown-my-orders-icon";
 import DropdownSellYourDesignIcon from "../../assets/images/svg/dropdown-sell-your-design-icon";
 import EarningsPayments from "../../assets/images/svg/earnings-payments";
