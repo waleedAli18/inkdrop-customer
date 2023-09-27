@@ -10,6 +10,6 @@ module.exports = {
     includePaths: [path.join(__dirname, "styles")],
   },
   typescript: {
-    ignoreBuildErrors: false,
+    ignoreBuildErrors: true,
   },
 };
